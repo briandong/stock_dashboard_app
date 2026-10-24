@@ -1,6 +1,6 @@
 # 🎈 Blank app template
 
-A simple Streamlit app template for you to modify!
+A simple stock dashboard app
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
 
@@ -21,5 +21,5 @@ $ curl -LsSf https://astral.sh/uv/install.sh | sh
 2. Run the app
 
    ```
-   $ uv run streamlit run streamlit_app.py
+   $ uv run streamlit run stock_dashboard.py
    ```
