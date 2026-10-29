@@ -69,8 +69,10 @@ if uploaded_file:
     symbols = df.symbol
     shares = df.shares
     bonus = df.bonus
+    data_load_state = st.text('Loading data...')
     stock_df = ak.stock_zh_a_spot()
     fund_etf_df = ak.fund_etf_category_sina(symbol="ETF基金")
+    data_load_state.text("Loading done!")
     names, prices, change_rates, change_values = [], [], [], []
     for symbol in symbols:
         if symbol.startswith('sz1') or symbol.startswith('sh5'): # ETF
